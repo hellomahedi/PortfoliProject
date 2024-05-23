@@ -224,8 +224,22 @@ hr{
     background: #142850;
     color: #EDF7FA;
 }
-
-
+footer{
+    background: #ffffff;
+    height: 102px;
+    text-align: center;
+    font-size: 25px;
+}
+footer>.icon>i{
+    font-weight: 600;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+footer>p{
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+}
 /* ----------------------------------Media query--------------- */
 
 @media screen and (max-width: 576px) {
