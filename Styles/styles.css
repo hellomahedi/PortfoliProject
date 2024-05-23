@@ -1,0 +1,127 @@
+body{
+
+    width: 90%;
+    /* width: 1152px; */
+    height: 2041px;
+    margin: 0 auto;
+    background: #6363630f;
+}
+
+.header-section{
+    background: #FFFF;
+    padding:40px 50px;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav-service{
+    display: flex;
+}
+.nav-service>li, a{
+    text-decoration: none;
+    font-family: Heebo;
+    list-style: none;
+    color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* margin:0 15px; */
+   font-weight: 600;
+   font-size: 20px;
+
+}
+
+/* ----------------hero container----------- */
+.hero-container{
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.hero-description{
+    width: 58%;
+}
+.hero-description>h1,h2{
+font-family: Inter;
+font-size: 44px;
+font-weight: 700;
+margin-top: 0;
+}
+.hero-description>p{
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+padding:0px 90px 1px 1px;
+}
+.hero-image{
+    width: 35%;
+}
+
+.primary-btn{
+    padding: 10px 40px;
+    font-size: 20px;
+   font-family: Inter;
+    /* box-shadow: 4px 5px 0px 3px #FF6464; */
+    box-shadow: 4px 5px 0px 3px #222222;
+    
+    background: none;
+    /* border: 3px solid rgb(0, 0, 0); */
+    border: 3px solid #FF6464;
+    background: #FF6464;
+    border-radius: 15px 0px 15px 0px;
+    margin-top: 20px;
+    font-weight: 600;  
+    color: rgb(255, 255, 255);
+  }
+  .primary-btn:hover{
+    /* border: 3px solid #080808; */
+    /* border: 3px solid #080808; */
+    box-shadow: 0 0px 20px 0 rgb(168, 171, 167);
+    transition: 1s;
+  }
+
+/* ----------------------------------Media query--------------- */
+
+@media screen and (max-width: 576px) {
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-service,li, a{
+        margin-top: 10px;
+    }
+    .hero-description{
+        width: 100%;
+    }
+    .hero-container{
+        margin-top: 100px;
+        flex-direction: column-reverse;
+    }
+    .hero-description>h1,h2{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0;
+        }
+    .hero-description>h2{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }    
+    .hero-description>p{
+        text-align: center;
+        padding: 0;
+    }
+    .hero-description>.primary-btn{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .hero-image{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
