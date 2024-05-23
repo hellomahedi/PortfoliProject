@@ -10,6 +10,7 @@ body{
 .header-section{
     background: #FFFF;
     padding:40px 50px;
+
 }
 .nav-container{
     display: flex;
@@ -40,6 +41,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin-top: 150px;
+    margin-bottom: 130px;
 }
 .hero-description{
     width: 58%;
@@ -65,11 +67,8 @@ padding:0px 90px 1px 1px;
     padding: 10px 40px;
     font-size: 20px;
    font-family: Inter;
-    /* box-shadow: 4px 5px 0px 3px #FF6464; */
     box-shadow: 4px 5px 0px 3px #222222;
-    
     background: none;
-    /* border: 3px solid rgb(0, 0, 0); */
     border: 3px solid #FF6464;
     background: #FF6464;
     border-radius: 15px 0px 15px 0px;
@@ -78,15 +77,78 @@ padding:0px 90px 1px 1px;
     color: rgb(255, 255, 255);
   }
   .primary-btn:hover{
-    /* border: 3px solid #080808; */
-    /* border: 3px solid #080808; */
     box-shadow: 0 0px 20px 0 rgb(168, 171, 167);
     transition: 1s;
   }
 
+
+  /* -------------recent-posts--------------- */
+
+  main{
+    background: #EDF7FA;
+    height: 356px;
+    padding:40px 50px;
+   
+  }
+  .recent-posts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+  }
+  .recent-posts>p,span{
+    padding: 0px 10px;
+    color: #f63030;
+    cursor: pointer;
+    text-decoration: dotted;
+    font-weight: 400;
+  }
+
+
+
+
+.posts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+.single-post{
+  background: #ffffff;
+  padding: 30px;
+  font-family: Inter;
+}
+.single-post>h3{
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+}
+.single-post>h4{
+    opacity: .75;
+    font-family: sans-serif;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Inter;
+}
+
+
+
+
+
+
+
 /* ----------------------------------Media query--------------- */
 
 @media screen and (max-width: 576px) {
+    body{
+
+        width: 90%;
+        height: 2041px;
+        margin: 0 auto;
+        background: #6363630f;
+    }
     .nav-container{
         flex-direction: column;
     }
@@ -123,5 +185,9 @@ padding:0px 90px 1px 1px;
         justify-content: center;
         width: 100%;
     }
-
+    .posts{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+    }
 }
