@@ -80,7 +80,12 @@ padding:0px 90px 1px 1px;
     margin-top: 20px;
     font-weight: 600;  
     cursor: pointer;
-   
+  }
+  .primary-btn:hover{
+    border: 3px solid #000000;
+    background: #FF6464;
+    transition: 1s;
+    color: #EDF7FA;
   }
   
 
@@ -115,30 +120,25 @@ padding:0px 90px 1px 1px;
     gap: 40px;
 }
 .single-post{
-  background: #ffffff;
-  padding: 30px;
-  font-family: Inter;
+    position: relative;
+    background: #ffffff; 
+    border-radius: 8px 8px 8px 8px;
+    box-shadow:0px 5px 5px 5px #dbdbdb;
+    padding: 30px;
+    font-family: Inter;
+    transition: 1s;
 }
 
-.single-post {
-    position: relative;
-    background: #ffffff;
-    border-radius: 0px 8px 8px 8px;
-    /* border: 2px solid #FF6464; */
+  .single-post:hover{
+    background: none;
+    border-radius: 8px 8px 8px 8px;
+    border: 2px solid #f63030;
+    transition: 1s;
+    box-shadow: 5px 5px 5px 5px #b4b4b4a2;
+
   }
   
-  .single-post:before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: 0;
-    height: 40px;
-    width: 40px;
-    background: transparent;
-    /* border: 2px solid #FF6464; */
-    border-bottom-left-radius: 50%;
-    box-shadow: 0 20px 0 0 #ffffff;
-  }
+ 
 
 .single-post>h3{
 font-size: 26px;
@@ -189,9 +189,15 @@ hr{
     margin-bottom: 40px;
     box-shadow:0px 5px 5px 5px #dbdbdb;
     padding: 20px;
+    border-radius: 8px 8px 8px 8px;
+    border: 2px solid #d54949;
 }
+
 .featured-des{
     font-family: Inter;
+}
+.featured-des>p{
+    margin-top: 0px;
 }
 .featured-des>h2{
     font-size: 30px;
@@ -265,7 +271,8 @@ footer>p{
     }
     .hero-description>h1{
         text-align: center;
-        margin-bottom: 0;
+        font-size: 35px;
+        /* margin-bottom: 0; */
 
         }
        
@@ -308,9 +315,17 @@ footer>p{
         width: 100%;
         flex-direction: column;
         padding: 1px;
+        border: none;
         /* flex-direction: column-reverse; */
       }
       .featured-des{
-        padding: 40px;
+        padding:10px 40px;
       }
+
+      .sal>p{
+        display: none;
+        margin: 0px 10px;
+        opacity: .75;
+    }
+
 }
